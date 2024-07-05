@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "test@gmail.com",
+      "password": "test@123"
+    },
+    {
+      "id": "2",
+      "email": "karthik@gmail.com",
+      "password": "karthik@123"
+    },
+    {
+      "id": "9P1VDnF"
+    },
+    {
+      "id": "vwEBusP"
+    },
+    {
+      "id": "zJzo_UL",
+      "email": "bab@1",
+      "password": "1234355567"
+    },
+    {
+      "email": "baab@11",
+      "password": "131446876976",
+      "id": "8apV4tP"
+    },
+    {
+      "id": "QK_E_7L",
+      "email": "bab@1",
+      "password": "234322424324"
+    },
+    {
+      "id": "jIBvyfH",
+      "email": "babb@1",
+      "password": "12345678"
+    },
+    {
+      "id": "8yh6mcB",
+      "email": "test1@gmail.com",
+      "password": "test@12345"
+    },
+    {
+      "id": "TnlK_OT",
+      "email": "test2@gmail.com",
+      "password": "Karthik12"
+    },
+    {
+      "id": "jf_19k7",
+      "email": "test3@gmail.com",
+      "password": "test1234"
+    },
+    {
+      "id": "YA-QAog",
+      "email": "test4@gmail.com",
+      "password": "test12345"
+    }
+  ],
+  "records": [
+    {
+      "name": "Biryani House",
+      "mobile": "1234567890",
+      "desc": "Servers Biryani",
+      "location": "India",
+      "picture": "",
+      "id": "2"
+    },
+    {
+      "name": "Sushi House",
+      "desc": "Servers Sushi",
+      "location": "Bangalore",
+      "mobile": "1234567891",
+      "picture": "",
+      "id": "woRCzbc"
+    },
+    {
+      "name": "kkkkkrr",
+      "mobile": "1234567890",
+      "desc": "etst",
+      "location": "bangalore",
+      "picture": "",
+      "id": "AUhyh5j"
+    },
+    {
+      "name": "Biryani Mandi",
+      "mobile": "1234567800",
+      "desc": "serves mandi",
+      "location": "Delhi",
+      "picture": "mb_dark.jpg",
+      "id": "dmKB5t5"
+    },
+    {
+      "name": "pista house",
+      "mobile": "1234567890",
+      "desc": "multicuisine",
+      "location": "India",
+      "picture": "",
+      "id": "yRV6Obi"
+    }
+  ]
+}

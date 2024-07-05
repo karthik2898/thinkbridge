@@ -1,0 +1,65 @@
+<div [formGroup]="addRecord" style="padding: 20px;">
+        <h2 *ngIf="!data">Add Restaurant</h2>
+        <h2 *ngIf="data">Update Restaurant Details</h2>
+
+        <ion-toast
+            [isOpen]= toast
+            [message]= msg
+            position="top"
+            [duration]="5000"
+            (didDismiss)="setOpen(false)">
+        </ion-toast>
+        
+        <ion-input
+            placeholder="Enter Name"
+            class="custom"
+            errorText="Name must contain atleast 10 characters!"
+            formControlName="name" 
+            [counter]="true">
+        </ion-input><br>
+
+        <ion-input
+            placeholder="Enter Description"
+            class="custom"
+            errorText="Description is required!"
+            formControlName="desc" 
+            [counter]="true">
+        </ion-input><br>
+
+        <ion-input
+            placeholder="Location"
+            class="custom"
+            errorText="Location is required!"
+            formControlName="location" 
+            [counter]="true">
+        </ion-input><br>
+
+        <ion-input
+            placeholder="Enter Mobile No."
+            class="custom"
+            errorText="Enter a valid mobile number containing 10 numbers!"
+            formControlName="mobile" 
+            [counter]="true">
+        </ion-input><br>
+
+        <ion-input
+            placeholder="Upload Menu Image"
+            class="custom"
+            errorText="Image must be jpeg/png"
+            formControlName="name" (click)="pic.click()" [value]="selectedPic" formControlName="picture"
+            [counter]="true">
+        </ion-input>
+
+        <input id="upload" #pic type="file" style="display: none;" accept="image/jpeg, image/png" (change)="onFileSelected($event)">
+    
+        <br><br>
+        <!-- <mat-card-actions style="display: flex;justify-content: start;padding: 2px 0 0 18px;">
+          <button mat-raised-button mat-button style="color: white;background-color: red;" (click)="add()" *ngIf="!data" [disabled]="addRecord.invalid">Add</button>
+          <button mat-raised-button mat-button style="color: white;background-color: red;" (click)="add()" *ngIf="data" [disabled]="addRecord.invalid">Update</button>
+        </mat-card-actions> -->
+       
+        <ion-button (click)="add()" expand="block" color="danger" *ngIf="!data" [disabled]="addRecord.invalid">Add</ion-button>
+        <ion-button (click)="add()" expand="block" color="danger" *ngIf="data" [disabled]="addRecord.invalid">Update</ion-button>
+        
+      
+</div>

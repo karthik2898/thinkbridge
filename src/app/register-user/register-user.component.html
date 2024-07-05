@@ -1,0 +1,47 @@
+<div class="outer-div">
+    <ion-toast
+        [isOpen]= toast
+        [message]= msg
+        position="top"
+        [duration]="5000"
+        (didDismiss)="setOpen(false)">
+    </ion-toast>
+    <div class="inner-div">
+        
+        <mat-card [formGroup]="registerForm">
+            <div class="heading">Register</div><br>
+            
+        
+            <div style="margin: 0 18px;">
+                <ion-input
+                    placeholder="Enter Email (Ex. pat@example.com)"
+                    class="custom"
+                    errorText="Please Enter a valid Email!" 
+                    formControlName="email" 
+                    [counter]="true">
+                </ion-input><br>
+            </div>    
+            
+            <div style="margin: 0 18px;">
+                <ion-input
+                    placeholder="Enter Email (Ex. pat@example.com)"
+                    class="custom"
+                    errorText="Password must be atleast 8 characters!" 
+                    formControlName="password" 
+                    [counter]="true">
+                </ion-input><br>
+            </div>     
+            
+            <ion-button style="margin: 0 18px;" (click)="register()" expand="block" color="danger" [disabled]="registerForm.invalid">Register</ion-button>
+            <br>             
+     
+            
+            <div style="padding: 2px 0 5px 18px;">
+                <span>Registered User? Click here to</span>&nbsp;<a routerLink="/login">login</a>
+            </div>
+            
+          </mat-card> 
+          
+          
+    </div>
+</div>
