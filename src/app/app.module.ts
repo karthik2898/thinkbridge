@@ -23,6 +23,7 @@ import { ApiInterceptor } from './api.interceptor';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatTableModule} from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { RecordDialogComponent } from './record-dialog/record-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog'; 
@@ -47,7 +48,7 @@ import { IonicModule } from '@ionic/angular';
     MatToolbarModule, MatButtonModule, MatProgressSpinnerModule,
     MatIconModule, MatCardModule,MatInputModule,MatFormFieldModule,
     FormsModule,ReactiveFormsModule, MatDialogModule,MatSelectModule,
-    HttpClientModule, MatPaginatorModule,
+    HttpClientModule, MatPaginatorModule,MatTooltipModule,
     IonicModule.forRoot({})
   ],
   providers: [

@@ -47,6 +47,7 @@ export class DashboardComponent implements OnInit {
     )
   }
 
+
   add(){
     const dialogRef=this.dialog.open(RecordDialogComponent,{
       //  height: '40%',
@@ -77,20 +78,6 @@ export class DashboardComponent implements OnInit {
   }
 
   selection = new SelectionModel<PeriodicElement>(true, []);
-
-  /** Whether the number of selected elements matches the total number of rows. */
-  isAllSelected() {
-    const numSelected = this.selection.selected.length;
-    const numRows = this.dataSource.length;
-    return numSelected === numRows;
-  }
-
-  /** Selects all rows if they are not all selected; otherwise clear selection. */
-  masterToggle() {
-    this.isAllSelected() ?
-        this.selection.clear() :
-        this.dataSource.forEach((row :any)=> this.selection.select(row));
-  }
 
   delete(row:any){{
     console.log(row.id)

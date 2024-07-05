@@ -53,10 +53,6 @@
         <input id="upload" #pic type="file" style="display: none;" accept="image/jpeg, image/png" (change)="onFileSelected($event)">
     
         <br><br>
-        <!-- <mat-card-actions style="display: flex;justify-content: start;padding: 2px 0 0 18px;">
-          <button mat-raised-button mat-button style="color: white;background-color: red;" (click)="add()" *ngIf="!data" [disabled]="addRecord.invalid">Add</button>
-          <button mat-raised-button mat-button style="color: white;background-color: red;" (click)="add()" *ngIf="data" [disabled]="addRecord.invalid">Update</button>
-        </mat-card-actions> -->
        
         <ion-button (click)="add()" expand="block" color="danger" *ngIf="!data" [disabled]="addRecord.invalid">Add</ion-button>
         <ion-button (click)="add()" expand="block" color="danger" *ngIf="data" [disabled]="addRecord.invalid">Update</ion-button>

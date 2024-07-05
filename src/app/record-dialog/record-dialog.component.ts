@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { MatTableDataSource } from '@angular/material/table';
 import { ApiserviceService } from '../shared/services/apiservice.service';
 
 @Component({
@@ -100,11 +99,6 @@ setOpen(val:any){
       // this.addRecord.controls['picture'].setValue(blob);
       this.selectedPic = file.name;
       this.addRecord.controls['picture'].setValue(this.selectedPic);
-    };
-
-      
+    };      
     }
-
-  
-
 }
